@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>$Title$</title>
+</head>
+<body>
+
+</body>
+<script src="jquery.js"></script>
+<script>
+    $.ajax({
+        url:'http://hbase.rest.miui.sec.srv/miui_sec:flow_order_order/0355218186-201605291023391276818125530/O:phonenum',
+        success:function (res) {
+            console.log(res)
+        },
+        error:function () {
+            console.log('sss')
+        }
+    })
+
+    $.ajax({
+        url:'http://hbase.rest.miui.sec.srv/miui_sec:flow_order_order/*',
+        success:function (res) {
+            console.log(res)
+        }
+    })
+</script>
+</html>
